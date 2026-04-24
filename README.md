@@ -1,6 +1,10 @@
 # Public Repo Config Guide
 
 这个仓库已经把敏感信息替换成了 `xxx`。如果你要在本地或服务器运行项目，请按下面的位置补齐配置。
+一个基于springboot的项目，可以调用ai生成问题生成评分，回答问题
+<img width="2260" height="2323" alt="image" src="https://github.com/user-attachments/assets/70806a21-cd12-40a4-a84d-ced9fda22637" />
+<img width="2432" height="1434" alt="image" src="https://github.com/user-attachments/assets/569bf0f3-5ffb-4aff-b7ab-e81dd5972a57" />
+
 
 ## Backend
 
