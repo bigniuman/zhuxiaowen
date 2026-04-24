@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.zhuxiaowen.mapper.ScoringResultMapper">
+  <resultMap id="BaseResultMap" type="com.yupi.zhuxiaowen.model.entity.ScoringResult">
+    <!--@mbg.generated-->
+    <!--@Table scoring_result-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="resultName" jdbcType="VARCHAR" property="resultname" />
+    <result column="resultDesc" jdbcType="LONGVARCHAR" property="resultdesc" />
+    <result column="resultPicture" jdbcType="VARCHAR" property="resultpicture" />
+    <result column="resultProp" jdbcType="VARCHAR" property="resultprop" />
+    <result column="resultScoreRange" jdbcType="INTEGER" property="resultscorerange" />
+    <result column="appId" jdbcType="BIGINT" property="appid" />
+    <result column="userId" jdbcType="BIGINT" property="userid" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="isDelete" jdbcType="TINYINT" property="isdelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, resultName, resultDesc, resultPicture, resultProp, resultScoreRange, appId, userId, 
+    createTime, updateTime, isDelete
+  </sql>
+</mapper>

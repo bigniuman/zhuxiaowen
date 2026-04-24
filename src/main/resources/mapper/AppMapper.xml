@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.zhuxiaowen.mapper.AppMapper">
+  <resultMap id="BaseResultMap" type="com.yupi.zhuxiaowen.model.entity.App">
+    <!--@mbg.generated-->
+    <!--@Table app-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="appName" jdbcType="VARCHAR" property="appName" />
+    <result column="appDesc" jdbcType="VARCHAR" property="appDesc" />
+    <result column="appIcon" jdbcType="VARCHAR" property="appIcon" />
+    <result column="appType" jdbcType="TINYINT" property="appType" />
+    <result column="scoringStrategy" jdbcType="TINYINT" property="scoringStrategy" />
+    <result column="reviewStatus" jdbcType="INTEGER" property="reviewStatus" />
+    <result column="reviewMessage" jdbcType="VARCHAR" property="reviewMessage" />
+    <result column="reviewerId" jdbcType="BIGINT" property="reviewerId" />
+    <result column="reviewTime" jdbcType="TIMESTAMP" property="reviewTime" />
+    <result column="userId" jdbcType="BIGINT" property="userId" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="isDelete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, appName, appDesc, appIcon, appType, scoringStrategy, reviewStatus, reviewMessage, 
+    reviewerId, reviewTime, userId, createTime, updateTime, isDelete
+  </sql>
+</mapper>

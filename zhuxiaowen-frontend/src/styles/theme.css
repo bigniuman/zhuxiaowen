@@ -1,0 +1,114 @@
+:root {
+  --brand-50: #fafafa;
+  --brand-100: #f2f2f3;
+  --brand-200: #e5e7ea;
+  --brand-300: #d2d6db;
+  --brand-400: #aeb5bd;
+  --brand-500: #8b949e;
+  --brand-600: #68707a;
+  --brand-700: #4f5761;
+  --brand-800: #3b4148;
+  --brand-900: #23272d;
+  --page-bg: #f6f7f8;
+  --surface-strong: rgba(255, 255, 255, 0.88);
+  --surface-soft: rgba(255, 255, 255, 0.68);
+  --line-soft: rgba(59, 65, 72, 0.08);
+  --text-primary: #23272d;
+  --text-secondary: #666d75;
+  --shadow-lg: 0 24px 60px rgba(35, 39, 45, 0.1);
+  --shadow-md: 0 16px 40px rgba(35, 39, 45, 0.07);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(139, 148, 158, 0.12), transparent 28%),
+    radial-gradient(circle at top right, rgba(210, 214, 219, 0.14), transparent 24%),
+    linear-gradient(180deg, #ffffff 0%, #f7f8f9 45%, #f1f3f5 100%);
+}
+
+a {
+  color: inherit;
+}
+
+#app {
+  position: relative;
+}
+
+#app::before,
+#app::after {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 999px;
+  pointer-events: none;
+  filter: blur(18px);
+}
+
+#app::before {
+  top: -10rem;
+  left: -8rem;
+  background: rgba(210, 214, 219, 0.16);
+}
+
+#app::after {
+  right: -10rem;
+  bottom: -10rem;
+  background: rgba(139, 148, 158, 0.12);
+}
+
+.app-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.arco-btn-primary {
+  background: linear-gradient(135deg, var(--brand-500), var(--brand-700));
+  border-color: transparent;
+  box-shadow: 0 12px 24px rgba(79, 87, 97, 0.16);
+}
+
+.arco-btn-primary:hover,
+.arco-btn-primary:focus {
+  background: linear-gradient(135deg, var(--brand-400), var(--brand-600));
+  border-color: transparent;
+}
+
+.arco-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-md);
+}
+
+.arco-input-wrapper,
+.arco-textarea-wrapper,
+.arco-input-password {
+  border-radius: 16px;
+}
+
+.arco-input-wrapper:hover,
+.arco-textarea-wrapper:hover,
+.arco-input-password:hover {
+  border-color: rgba(139, 148, 158, 0.45);
+}
+
+.arco-list-pagination {
+  margin-top: 32px;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yupi.zhuxiaowen.mapper.UserAnswerMapper">
+  <resultMap id="BaseResultMap" type="com.yupi.zhuxiaowen.model.entity.UserAnswer">
+    <!--@mbg.generated-->
+    <!--@Table user_answer-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="appId" jdbcType="BIGINT" property="appid" />
+    <result column="appType" jdbcType="TINYINT" property="apptype" />
+    <result column="scoringStrategy" jdbcType="TINYINT" property="scoringstrategy" />
+    <result column="choices" jdbcType="LONGVARCHAR" property="choices" />
+    <result column="resultId" jdbcType="BIGINT" property="resultid" />
+    <result column="resultName" jdbcType="VARCHAR" property="resultname" />
+    <result column="resultDesc" jdbcType="LONGVARCHAR" property="resultdesc" />
+    <result column="resultPicture" jdbcType="VARCHAR" property="resultpicture" />
+    <result column="resultScore" jdbcType="INTEGER" property="resultscore" />
+    <result column="userId" jdbcType="BIGINT" property="userid" />
+    <result column="createTime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updateTime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="isDelete" jdbcType="TINYINT" property="isdelete" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, appId, appType, scoringStrategy, choices, resultId, resultName, resultDesc, resultPicture, 
+    resultScore, userId, createTime, updateTime, isDelete
+  </sql>
+</mapper>
