@@ -5,7 +5,8 @@
 
 
 一个基于springboot的项目，可以调用ai生成问题生成评分，回答问题
-![Uploading image.png…]()
+<img width="2456" height="1290" alt="image" src="https://github.com/user-attachments/assets/2a3f410f-f73a-403c-aba4-b7a68b9f8a2b" />
+
 
 <img width="2432" height="1434" alt="image" src="https://github.com/user-attachments/assets/569bf0f3-5ffb-4aff-b7ab-e81dd5972a57" />
 
